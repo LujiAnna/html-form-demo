@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="checkout form example">
+  <title>Checkout Form Example</title>
+</head>
+
+<body style="margin: 90px; padding: 0 20px">
+  <h2 class="content-head is-center">Checkout</h2>
+  <aside>
+       <p>
+           Please <em>enter</em> your information </p>
+           <p>then <b><em>proceed to place your order</em></b>
+       </p>
+   </aside>
+
+<!-- START HERE -->
+<link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/pure-min.css" integrity="sha384-Uu6IeWbM+gzNVXJcM9XV3SohHtmWE+3VGi496jvgX1jyvDTXfdK+rfZc8C1Aehk5" crossorigin="anonymous">
+  
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+   <!-- Style The Checkout Form How Ever You Prefer -->
+   <link rel="stylesheet" href="style.css">
+
+  <form class="#" method="POST" data-email="example@email.net"
+  action="">
+    <!-- change the form action to your script url -->
+
+    <div class="form-elements">
+      <fieldset class="pure-group">
+        <label for="name">Full Name: </label>
+        <input type="text" id="name" name="name" placeholder="Enter your full name" />
+      </fieldset>
+
+      <fieldset class="pure-group">
+        <label for="email"> Email Address:</label>
+        <input id="email" name="email" type="email" value=""
+        required placeholder="email@example.com"/>
+      </fieldset>
+
+      <fieldset class="pure-group">
+        <label for="address">Address </label>
+        <input id="address" name="address" placeholder="Your street address" />
+      </fieldset>
+      
+            <fieldset class="pure-group">
+                <label for="city">City</label>
+                <input type="text" id="city"/>
+                  </fieldset>
+                  
+                  <fieldset class="pure-group">
+                <label for="postalcode">Postalcode</label>
+                <input type="text" id="postalcode"/>
+                  </fieldset>
+
+                  <fieldset class="pure-group">
+                <label for="province">Province</label>
+                <select id="province">
+                    <option>[Select One]</option>
+                    <option>Antwerp</option>
+                    <option>Brussels</option>
+                    <option>Liege</option>
+                    <option>Namur</option>
+
+                </select>
+      </fieldset>
+      
+      <fieldset>
+    <legend>Payment method</legend>
+    <label><input type="radio" name="radio"> Credit Card</label>
+        <label><input type="radio" name="radio"> Debit Card</label>
+    <label><input type="radio" name="radio"> Maestro</label>
+
+  </fieldset>
+
+  <fieldset class="pure-group">
+        <label for="message">Message: </label>
+        <textarea id="message" name="message" rows="3" cols="30"
+        placeholder="Special message..."></textarea>
+      </fieldset>
+
+       <fieldset>
+        <label for="newsletter">
+            <input type="checkbox" id="newsletter" /> Send me promotional newsletter</label>
+            
+            
+            
+        <button type="submit" class="pure-button pure-button-primary button-xlarge">Place Order</button>
+        
+<!--        <button type="reset" class="pure-button button-small" style='margin-right:100px'>Reset info</button>-->
+        
+    </fieldset>
+    </div>
+
+    <!-- Customise the Thankyou Message People See when they submit the form: -->
+<!--
+    <div class="thankyou_message" style="display:none;">
+      <h2><em>Thanks</em> for contacting us!
+        We will get back to you soon!</h2>
+    </div>
+-->
+
+  </form>
+
+  <!-- Submit the Form to server Using tool of choice -->
+  <script src=""></script>
+<!-- END -->
+
+</body>
+</html>
